@@ -42,11 +42,16 @@ namespace WF.Login
                 "Sair",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
-            if(resposta == DialogResult.Yes)
+            if (resposta == DialogResult.Yes)
             {
                 Application.Exit();
             }
-            
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

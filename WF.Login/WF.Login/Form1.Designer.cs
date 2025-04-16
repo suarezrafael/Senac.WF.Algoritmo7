@@ -37,6 +37,7 @@
             label1 = new Label();
             label2 = new Label();
             button2 = new Button();
+            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -146,12 +147,27 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ButtonShadow;
+            button3.Location = new Point(687, 12);
+            button3.Name = "button3";
+            button3.Size = new Size(47, 34);
+            button3.TabIndex = 9;
+            button3.Text = "_";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(783, 417);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(textBox2);
             Controls.Add(label2);
@@ -181,5 +197,6 @@
         private Label label2;
         private PictureBox pictureBox1;
         private Button button2;
+        private Button button3;
     }
 }
