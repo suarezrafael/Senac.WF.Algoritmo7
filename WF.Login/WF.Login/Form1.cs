@@ -53,5 +53,15 @@ namespace WF.Login
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // esconda a tela de login
+            this.Hide();
+            // crie uma nova instância do formulário principal
+            var formPrincipal = new FormPrincipal();
+            // exiba o formulário principal
+            formPrincipal.Show();
+        }
     }
 }

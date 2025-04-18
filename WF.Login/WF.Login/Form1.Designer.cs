@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
@@ -98,6 +99,7 @@
             button1.TabIndex = 3;
             button1.Text = "ENTRAR";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox2
             // 
@@ -153,7 +155,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = SystemColors.ButtonShadow;
-            button3.Location = new Point(687, 12);
+            button3.Location = new Point(687, 9);
             button3.Name = "button3";
             button3.Size = new Size(47, 34);
             button3.TabIndex = 9;
@@ -177,6 +179,7 @@
             Controls.Add(linkLabel1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Opacity = 0.85D;
             Text = "Form1";
