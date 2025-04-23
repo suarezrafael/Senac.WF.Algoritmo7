@@ -1,6 +1,6 @@
 ﻿namespace WF.Login
 {
-    partial class FormPrincipal
+    partial class FormProdutos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
             panel1 = new Panel();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            btnProdutos = new Button();
+            button2 = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -43,6 +43,7 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            btnVoltar = new Button();
             textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -58,7 +59,7 @@
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(btnProdutos);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -118,23 +119,22 @@
             button3.Text = "Clientes";
             button3.UseVisualStyleBackColor = true;
             // 
-            // btnProdutos
+            // button2
             // 
-            btnProdutos.FlatAppearance.BorderSize = 0;
-            btnProdutos.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            btnProdutos.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnProdutos.FlatStyle = FlatStyle.Flat;
-            btnProdutos.Font = new Font("Century Gothic", 16F);
-            btnProdutos.ForeColor = Color.White;
-            btnProdutos.Image = (Image)resources.GetObject("btnProdutos.Image");
-            btnProdutos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProdutos.Location = new Point(12, 84);
-            btnProdutos.Name = "btnProdutos";
-            btnProdutos.Size = new Size(191, 45);
-            btnProdutos.TabIndex = 1;
-            btnProdutos.Text = "Produtos";
-            btnProdutos.UseVisualStyleBackColor = true;
-            btnProdutos.Click += btnProdutos_Click;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 16F);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(12, 84);
+            button2.Name = "button2";
+            button2.Size = new Size(191, 45);
+            button2.TabIndex = 1;
+            button2.Text = "Produtos";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -232,20 +232,31 @@
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(711, 415);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 6;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // textBox1
             // 
-            textBox1.Location = new Point(321, 192);
+            textBox1.Location = new Point(312, 172);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "Principal";
+            textBox1.TabIndex = 7;
+            textBox1.Text = "Produtos";
             // 
-            // FormPrincipal
+            // FormProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(textBox1);
+            Controls.Add(btnVoltar);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -254,7 +265,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormPrincipal";
+            Name = "FormProdutos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Senac foods";
             panel1.ResumeLayout(false);
@@ -277,13 +288,14 @@
         private PictureBox pictureBox1;
         private Button button4;
         private Button button3;
-        private Button btnProdutos;
+        private Button button2;
         private Button button5;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Button btnVoltar;
         private TextBox textBox1;
     }
 }

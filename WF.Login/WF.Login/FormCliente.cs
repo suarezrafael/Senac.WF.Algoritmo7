@@ -10,24 +10,15 @@ using System.Windows.Forms;
 
 namespace WF.Login
 {
-    public partial class FormPrincipal : Form
+    public partial class FormCliente : Form
     {
-        public FormPrincipal()
+        public FormCliente()
         {
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnProdutos_Click(object sender, EventArgs e)
-        {
-            // oculta a tela principal
-            this.Hide();
-            // cria tela de produtos e a exibe
-            new FormProdutos().Show();
 
         }
     }

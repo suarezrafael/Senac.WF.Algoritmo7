@@ -1,6 +1,6 @@
 ﻿namespace WF.Login
 {
-    partial class FormPrincipal
+    partial class FormCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             panel1 = new Panel();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            btnProdutos = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            label1 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -58,83 +57,13 @@
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(btnProdutos);
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(206, 450);
             panel1.TabIndex = 0;
-            // 
-            // button5
-            // 
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Century Gothic", 16F);
-            button5.ForeColor = Color.White;
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(12, 247);
-            button5.Name = "button5";
-            button5.Size = new Size(191, 45);
-            button5.TabIndex = 4;
-            button5.Text = "Entregas";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 16F);
-            button4.ForeColor = Color.White;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(14, 196);
-            button4.Name = "button4";
-            button4.Size = new Size(191, 45);
-            button4.TabIndex = 3;
-            button4.Text = "Pagto";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // button3
-            // 
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Century Gothic", 16F);
-            button3.ForeColor = Color.White;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(12, 136);
-            button3.Name = "button3";
-            button3.Size = new Size(191, 45);
-            button3.TabIndex = 2;
-            button3.Text = "Clientes";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // btnProdutos
-            // 
-            btnProdutos.FlatAppearance.BorderSize = 0;
-            btnProdutos.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
-            btnProdutos.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            btnProdutos.FlatStyle = FlatStyle.Flat;
-            btnProdutos.Font = new Font("Century Gothic", 16F);
-            btnProdutos.ForeColor = Color.White;
-            btnProdutos.Image = (Image)resources.GetObject("btnProdutos.Image");
-            btnProdutos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProdutos.Location = new Point(12, 84);
-            btnProdutos.Name = "btnProdutos";
-            btnProdutos.Size = new Size(191, 45);
-            btnProdutos.TabIndex = 1;
-            btnProdutos.Text = "Produtos";
-            btnProdutos.UseVisualStyleBackColor = true;
-            btnProdutos.Click += btnProdutos_Click;
             // 
             // button1
             // 
@@ -171,6 +100,85 @@
             panel3.Size = new Size(110, 122);
             panel3.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(14, 9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(85, 86);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 16F);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(12, 84);
+            button2.Name = "button2";
+            button2.Size = new Size(191, 45);
+            button2.TabIndex = 1;
+            button2.Text = "Produtos";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Century Gothic", 16F);
+            button3.ForeColor = Color.White;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(12, 136);
+            button3.Name = "button3";
+            button3.Size = new Size(191, 45);
+            button3.TabIndex = 2;
+            button3.Text = "Clientes";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Century Gothic", 16F);
+            button4.ForeColor = Color.White;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(14, 196);
+            button4.Name = "button4";
+            button4.Size = new Size(191, 45);
+            button4.TabIndex = 3;
+            button4.Text = "Pagto";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(224, 224, 224);
+            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Century Gothic", 16F);
+            button5.ForeColor = Color.White;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(12, 247);
+            button5.Name = "button5";
+            button5.Size = new Size(191, 45);
+            button5.TabIndex = 4;
+            button5.Text = "Entregas";
+            button5.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -182,16 +190,6 @@
             label1.Size = new Size(99, 21);
             label1.TabIndex = 1;
             label1.Text = "Senac food";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(14, 9);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(85, 86);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -232,20 +230,11 @@
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(321, 192);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "Principal";
-            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -277,13 +266,12 @@
         private PictureBox pictureBox1;
         private Button button4;
         private Button button3;
-        private Button btnProdutos;
+        private Button button2;
         private Button button5;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private TextBox textBox1;
     }
 }

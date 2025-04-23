@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WF.Login
 {
-    public partial class FormPrincipal : Form
+    public partial class FormProdutos : Form
     {
-        public FormPrincipal()
+        public FormProdutos()
         {
             InitializeComponent();
         }
@@ -22,13 +22,12 @@ namespace WF.Login
 
         }
 
-        private void btnProdutos_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-            // oculta a tela principal
+            // oculta a tela de produtos
             this.Hide();
-            // cria tela de produtos e a exibe
-            new FormProdutos().Show();
-
+            // cria tela principal e a exibe
+            new FormPrincipal().Show();
         }
     }
 }
